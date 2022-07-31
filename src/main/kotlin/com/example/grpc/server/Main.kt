@@ -15,7 +15,9 @@ class ServerConfig {
 
         sb.service(
             GrpcService.builder()
-                .addService(com.example.grpc.server.HelloServer())
+                .addService(
+                    HelloServer(),
+                )
                 .build()
         )
 
