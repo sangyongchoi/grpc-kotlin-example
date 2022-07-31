@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.example.grpc;
+
+option java_outer_classname = "Karol";
+option java_multiple_files = true;
+
+service HelloService {
+  rpc Hello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+  int64 message = 1;
+}
+
+message HelloResponse {
+  string message = 2;
+}
