@@ -16,7 +16,7 @@ class Client {
     suspend fun hello() {
         stub.hello(
             HelloRequest.newBuilder()
-                .setMessage(1000)
+                .setMessage("request message!!!")
                 .build()
         )
     }

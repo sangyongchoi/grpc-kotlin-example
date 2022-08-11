@@ -7,8 +7,6 @@ import com.example.grpc.HelloServiceGrpcKt
 class HelloServer : HelloServiceGrpcKt.HelloServiceCoroutineImplBase() {
 
     override suspend fun hello(request: HelloRequest): HelloResponse {
-        println(request.message)
-
         return HelloResponse.newBuilder()
             .setMessage("success!!")
             .build()

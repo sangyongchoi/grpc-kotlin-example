@@ -10,7 +10,8 @@ service HelloService {
 }
 
 message HelloRequest {
-  int64 message = 1;
+  string message = 1;
+  optional string optional_message = 2;
 }
 
 message HelloResponse {
